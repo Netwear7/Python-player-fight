@@ -1,0 +1,1 @@
+Go to DataAccess/Db_connect.py add your database credential.
