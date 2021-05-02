@@ -2,6 +2,7 @@
 Connect to MariaDb or connect to database
 """
 import pymysql
+from settings import username, password
 
 
 def db_connect(database_created=True):
@@ -11,9 +12,6 @@ def db_connect(database_created=True):
         database_created: Boolean
     Returns: Nothing.
     """
-    username = 'Your_database_username'
-    password = 'Your_database_password'
-
     if database_created:
         access_db = pymysql.connect(
             host='localhost',

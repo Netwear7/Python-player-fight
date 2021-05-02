@@ -41,6 +41,10 @@ duels_serv.stat_player(winner, looser)
 duels_serv.stat_player(looser, winner)
 # _____________________________________
 
+# Easter egg:
+player1.do_the_price_is_right()
+# _____________________________________
+
 # _______________________________________________
 # Memo  :                                       |
 #                                               |

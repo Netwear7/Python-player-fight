@@ -116,6 +116,25 @@ class Player:
         print(f"{self.pseudo} rate son attaque. --- {opponent.pseudo} ne perd aucun pt(s) de dégats.")
 
     @staticmethod
+    def do_the_price_is_right():
+        """
+        Easter egg attached to Player Object.
+        https://sametmax.com/alternative-au-do-while-en-python/
+        Returns:
+
+        """
+        choice = randint(0, 100)
+        while "L'utilisateur n'a pas encore deviné le prix":
+            response = int(input('Devinez le prix: '))
+            if response < choice:
+                print('Plus grand')
+            elif response > choice:
+                print('Plus petit')
+            else:
+                break
+        print('Bravo !')
+
+    @staticmethod
     def random_attack_damage():
         return randint(1, 100)
 
