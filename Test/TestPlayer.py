@@ -13,11 +13,11 @@ class TestPlayer(unittest.TestCase):
     def setUp(self):
         self.instance_player = Player("TestPlayer")
 
-    def testAttackDamage_IfGreaterThan100(self):
+    def testAttackDamage_IfLessThan100(self):
         attack_damage = self.instance_player.random_attack_damage()
         self.assertLessEqual(attack_damage, 100)
 
-    def testAttackDamage_IfLessThan1(self):
+    def testAttackDamage_IfGreaterThan1(self):
         attack_damage = self.instance_player.random_attack_damage()
         self.assertGreaterEqual(attack_damage, 1)
 
